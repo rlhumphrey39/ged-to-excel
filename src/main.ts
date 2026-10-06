@@ -196,7 +196,7 @@ window.addEventListener('dragover', (e) => e.preventDefault());
 window.addEventListener('drop', (e) => e.preventDefault());
 
 downloadButton.addEventListener('click', () => {
-  if (workbookBlob) download(workbookBlob, `${baseName}-for-ChatGPT.xlsx`);
+  if (workbookBlob) download(workbookBlob, `${baseName}-workbook.xlsx`);
 });
 saveReport.addEventListener('click', () => {
   if (reportBlob) download(reportBlob, `${baseName}-conversion-report.txt`);

@@ -27,7 +27,7 @@ async function main() {
     process.exit(2);
   }
   const base = basename(gedPath).replace(/\.[^.]+$/, '');
-  const outPath = resolve(outArg ?? join(tmpdir(), `${base}-for-ChatGPT.xlsx`));
+  const outPath = resolve(outArg ?? join(tmpdir(), `${base}-workbook.xlsx`));
   const reportPath = outPath.replace(/\.xlsx$/i, '') + '-conversion-report.txt';
   mkdirSync(dirname(outPath), { recursive: true });
 

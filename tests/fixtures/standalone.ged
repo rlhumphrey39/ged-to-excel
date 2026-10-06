@@ -1,0 +1,9 @@
+0 HEAD
+1 GEDC
+2 VERS 5.5.1
+1 CHAR UTF-8
+0 _CUSTOMREC
+1 _DATA something
+0 @X1@ _CUSTOM
+1 NOTE custom record note
+0 TRLR

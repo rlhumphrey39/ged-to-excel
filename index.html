@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Family Tree Maker GED file in, Excel workbook out</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script type="module" src="./src/main.ts"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Family Tree Maker GED file in, Excel workbook out</h1>
+      <p class="lead">Everything happens on your own computer. Your family tree file is never sent anywhere.</p>
+
+      <section id="drop-zone" class="drop-zone" aria-label="Choose or drop your Family Tree Maker GED file">
+        <input id="file-input" type="file" accept=".ged,.gedcom" hidden />
+        <button id="choose-button" type="button" class="big-button">Choose your Family Tree Maker GED file</button>
+        <p class="drop-hint">or drag the file here</p>
+      </section>
+
+      <section id="progress-area" class="progress-area" hidden aria-live="polite">
+        <progress id="progress-bar" max="100" value="0"></progress>
+        <p id="progress-text" class="progress-text"></p>
+      </section>
+
+      <section id="error-area" class="error-area" hidden role="alert">
+        <p id="error-message"></p>
+        <ul id="error-list"></ul>
+        <details id="error-details">
+          <summary>Technical details</summary>
+          <pre id="error-technical"></pre>
+        </details>
+      </section>
+
+      <section id="result-area" class="result-area" hidden>
+        <button id="download-button" type="button" class="big-button download">Download workbook</button>
+        <ul id="summary-list" class="summary-list"></ul>
+        <details class="more-details">
+          <summary>More details</summary>
+          <pre id="report-text" class="report-text"></pre>
+          <button id="save-report" type="button" class="link-button">Save this summary as a text file</button>
+        </details>
+
+        <div class="next-box">
+          <h2>Next: ask ChatGPT about your family tree</h2>
+          <ol>
+            <li>Start a new chat in ChatGPT and attach the workbook you just downloaded.</li>
+            <li>
+              Copy this message and paste it as your first question:
+              <textarea id="prompt-text" class="prompt-text" readonly rows="7" aria-label="Message to paste into ChatGPT"></textarea>
+              <button id="copy-button" type="button" class="copy-button">Copy</button>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>No account, no upload, nothing stored. You can close this page when you are done.</p>
+      <details class="advanced">
+        <summary>Advanced: file text encoding</summary>
+        <p>Only change this if the letters in your workbook look wrong.</p>
+        <label for="encoding-select">Text encoding</label>
+        <select id="encoding-select"></select>
+      </details>
+    </footer>
+  </body>
+</html>

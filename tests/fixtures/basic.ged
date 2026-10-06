@@ -1,0 +1,122 @@
+0 HEAD
+1 SOUR FTM
+2 NAME Family Tree Maker for Windows
+2 VERS 24.0
+2 CORP Example Software Inc.
+3 ADDR 1 Example Way
+4 CONT Exampletown
+1 DEST GED55
+1 DATE 1 JAN 2024
+1 SUBM @SUB1@
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+0 @SUB1@ SUBM
+1 NAME Sample Submitter
+0 @I1@ INDI
+1 NAME Alice /Example/
+2 GIVN Alice
+2 SURN Example
+1 NAME Ally /Example/
+2 TYPE aka
+1 SEX F
+1 BIRT
+2 DATE ABT 1900
+2 PLAC Springfield, Example County
+1 BIRT
+2 DATE BET 1899 AND 1901
+2 SOUR @S1@
+3 PAGE p. 12
+1 _MILT Army nurse
+2 DATE 1918
+2 PLAC Fort Example
+1 _MDCL Asthma
+1 SSN 000-00-0000
+1 EMAIL alice@example.invalid
+1 ADDR 12 Example Street
+2 CONT Springfield
+1 OCCU =SUM(A1:A2)
+1 FAMS @F1@
+1 FAMS @F999@
+1 NOTE   Leading spaces note
+1 OBJE @O1@
+0 @I2@ INDI
+1 NAME Bob /Example/ Jr.
+1 SEX M
+1 RESN privacy
+1 DEAT
+2 DATE 5 MAR 1970
+2 PLAC Example City
+1 EVEN Moved house
+2 TYPE Relocation
+2 DATE 1950
+1 PHON +1 555 0100
+1 FAMS @F1@
+1 FAMS @F2@
+0 @I3@ INDI
+1 NAME Carol /Example/
+1 SEX F
+1 BIRT
+2 DATE 1925
+2 RESN privacy
+1 RESI
+2 DATE 1930
+2 RESN locked
+1 FAMC @F1@
+2 PEDI birth
+1 IDNO -5
+1 TITL @home
+0 @I4@ INDI
+1 NAME /Solo/
+1 BIRT
+2 DATE 1927
+1 REFN 007
+1 FAMC @F1@
+2 PEDI adopted
+1 ZZZX something
+2 _WEIRD nested
+0 @I5@ INDI
+1 SEX U
+1 BIRT
+2 DATE 1960
+2 SOUR @S404@
+0 @I6@ INDI
+1 NAME Dora /Other/
+1 SEX F
+1 FAMS @F2@
+0 @F1@ FAM
+1 HUSB @I2@
+1 WIFE @I1@
+1 CHIL @I3@
+1 CHIL @I4@
+2 _FREL Adopted
+2 _MREL Adopted
+1 MARR
+2 DATE 1922
+2 PLAC Springfield
+0 @F2@ FAM
+1 WIFE @I6@
+1 RESN confidential
+1 DIV
+2 DATE 1965
+0 @F3@ FAM
+1 RESN confidential
+1 NOTE A family with no recorded links
+0 @S1@ SOUR
+1 TITL Example Parish Register
+1 AUTH Example Clerk
+1 REPO @R1@
+0 @S2@ SOUR
+1 TITL Example Census
+0 @R1@ REPO
+1 NAME Example Archive
+0 @O1@ OBJE
+1 FILE photo.jpg
+2 FORM jpg
+0 @O2@ OBJE
+1 FILE document.pdf
+0 @N1@ NOTE This is a long note that is split
+1 CONC  across lines
+1 CONT and continues on a new line.
+0 TRLR

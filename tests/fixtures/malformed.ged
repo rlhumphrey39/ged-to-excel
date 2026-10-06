@@ -1,0 +1,19 @@
+2 X before the first record
+0 HEAD
+1 GEDC
+2 VERS 5.5.1
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME Bob /Sample/
+NAME Bob
+1 BIRT
+3 DATE 1900
+4 NOTE child of a bad line
+1 SEX M
+   1 OCCU Farmer
+
+0
+1 NAME Under bare zero
+0 @I2@ INDI
+1 NAME Eve /Sample/
+0 TRLR

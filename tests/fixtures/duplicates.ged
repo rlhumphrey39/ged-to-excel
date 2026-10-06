@@ -1,0 +1,13 @@
+0 HEAD
+1 GEDC
+2 VERS 5.5.1
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME First /Dup/
+0 @I1@ INDI
+1 NAME Second /Dup/
+0 @F1@ FAM
+1 HUSB @I1@
+0 @F1@ FAM
+1 CHIL @I1@
+0 TRLR

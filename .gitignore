@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.xlsx
+*-conversion-report.txt
+# Never commit real family trees; only synthetic fixtures live in tests/fixtures/.
+*.ged
+!tests/fixtures/*.ged
+.DS_Store
+.claude/
